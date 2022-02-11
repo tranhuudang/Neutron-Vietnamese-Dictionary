@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" align="center" src="https://github.com/zeroclubvn/DictionaryX/raw/master/21CenturyDictionary/Resources/icons8-physics-64.png?raw=true">
+  <img width="128" align="center" src="https://github.com/zeroclubvn/Neutron-Vietnamese-Dictionary/raw/master/21CenturyDictionary/Resources/icons8-physics-64.png?raw=true">
 </p>
 <h1 align="center">
   Neutron - Từ điển Anh Việt
