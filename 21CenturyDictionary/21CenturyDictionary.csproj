@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7306C67D-C874-4A96-A555-707E99ED867A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NeutronDictionary</RootNamespace>
+    <AssemblyName>Neutron</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Project_16SC\Neutron Out\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>2.2.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>19D46F06870D15A844FFE522708A04FF8A95A617</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>21CenturyDictionary_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ver1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hub.Designer.cs">
+      <DependentUpon>Hub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaddingForRichTextBox.cs" />
+    <Compile Include="DataProcessing.cs" />
+    <Compile Include="errorList.cs" />
+    <Compile Include="FileFactory.cs" />
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="miniSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miniSearchForm.Designer.cs">
+      <DependentUpon>miniSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paragraphTranslate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paragraphTranslate.Designer.cs">
+      <DependentUpon>paragraphTranslate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sound.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="WordFactory.cs" />
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="about.vi-VN.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hub.resx">
+      <DependentUpon>Hub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.bin.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.en-US.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.vi-VN.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miniSearchForm.resx">
+      <DependentUpon>miniSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paragraphTranslate.resx">
+      <DependentUpon>paragraphTranslate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.vi-VN.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="21CenturyDictionary_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-physics-64.png" />
+    <None Include="Resources\physics.png" />
+    <None Include="Resources\volume-blue-24.png" />
+    <None Include="Resources\quote-64.png" />
+    <None Include="Resources\global-64.png" />
+    <None Include="Resources\search-light.png" />
+    <None Include="Resources\favourite-light.png" />
+    <None Include="Resources\favourite1.png" />
+    <None Include="Resources\history-light.png" />
+    <None Include="Resources\heart-32-light.png" />
+    <None Include="Resources\paragraph-light.png" />
+    <None Include="Resources\more-24-light.png" />
+    <None Include="Resources\picture-32-light.png" />
+    <None Include="Resources\volume-24-light.png" />
+    <None Include="Resources\global-small-light.png" />
+    <None Include="Resources\leave-20.png" />
+    <None Include="Resources\leave-32.png" />
+    <None Include="Resources\remove-48.png" />
+    <None Include="Resources\print-64.png" />
+    <None Include="Resources\print-48.png" />
+    <None Include="Resources\print-32.png" />
+    <None Include="Resources\more-24.png" />
+    <None Include="Resources\more.png" />
+    <None Include="Resources\info-20.png" />
+    <None Include="Resources\heart-32.png" />
+    <None Include="Resources\volume-24.png" />
+    <None Include="Resources\volume-32.png" />
+    <None Include="Resources\picture-32.png" />
+    <None Include="Resources\light-32.png" />
+    <None Include="Resources\global-small.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\volume.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\paragraph.png" />
+    <None Include="Resources\dailyword1.png" />
+    <None Include="Resources\dailyword.png" />
+    <None Include="Resources\collocation.png" />
+    <None Include="Resources\dark-32.png" />
+    <None Include="Resources\close-20.png" />
+    <None Include="Resources\close-24.png" />
+    <None Include="Resources\close-32.png" />
+    <None Include="Resources\close-48.png" />
+    <None Include="Resources\dailyword-light.png" />
+    <None Include="Resources\collocation-light.png" />
+    <None Include="Resources\background-100.png" />
+    <None Include="Resources\love.png" />
+    <None Include="Resources\favourite.png" />
+    <None Include="Resources\history.png" />
+    <None Include="Resources\favourite-heart.png" />
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\envi_basic.txt" />
+    <None Include="Resources\windows10.png" />
+    <None Include="Resources\windows10-32.png" />
+    <None Include="Resources\icons8-physics-641.png" />
+    <None Include="Resources\micro-32.png" />
+    <None Include="Resources\micro-24.png" />
+    <None Include="Resources\micro2-32.png" />
+    <None Include="Resources\micro-3-32.png" />
+    <None Include="Resources\micro4-32.png" />
+    <None Include="Resources\delete-32.png" />
+    <None Include="Resources\delete-24.png" />
+    <None Include="Resources\back-arrow-32-light.png" />
+    <None Include="Resources\back-arrow-32.png" />
+    <None Include="bin\Debug\Release-Notes.txt" />
+    <None Include="Resources\smaller-32-light.png" />
+    <None Include="Resources\bigger-32-light.png" />
+    <None Include="Resources\bigger-32-dark.png" />
+    <None Include="Resources\smaller-32-dark.png" />
+    <None Include="Resources\oops-green.png" />
+    <None Include="Resources\words.txt" />
+    <None Include="Resources\words300k.txt" />
+    <None Include="Resources\heart-filled-32.png" />
+    <None Include="Resources\heart-32-light-filled.png" />
+    <None Include="Resources\sort-alpha-light.png" />
+    <None Include="Resources\sort-32-black.png" />
+    <None Include="Resources\sort-24-black.png" />
+    <None Include="Resources\talks-64-black-2.png" />
+    <None Include="Resources\talk-64-white-gray.png" />
+    <None Include="Resources\light-32-light.png" />
+    <Content Include="ver1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
